@@ -13,7 +13,12 @@
         <div class="row mb-3">
             <div class="col-md-12 mb-3">
                 <label>Value</label>
-                <textarea name="value" id="value" class="form-control" style="resize: none;" cols="30" rows="10">{{ $setting->value }}</textarea>
+                @if ($setting->id == 5 || $setting->id == 6)
+                    <textarea name="value" id="value" class="form-control" style="resize: none;" cols="30" rows="10">{{ $setting->value }}</textarea>
+                @else
+                    <textarea name="value" id="valueType" class="form-control" style="resize: none;" cols="30" rows="10">{{ $setting->value }}</textarea>
+                @endif
+
             </div>
         </div>
         <div class="row mb-3">

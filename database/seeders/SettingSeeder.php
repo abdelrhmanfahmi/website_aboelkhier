@@ -14,6 +14,18 @@ class SettingSeeder extends Seeder
     public function run(): void
     {
         Setting::create([
+            'key' => 'email_site',
+            'value' => '',
+            'image' => '',
+        ]);
+
+        Setting::create([
+            'key' => 'phone_site',
+            'value' => '',
+            'image' => '',
+        ]);
+
+        Setting::create([
             'key' => 'facebook_link',
             'value' => '',
             'image' => '',

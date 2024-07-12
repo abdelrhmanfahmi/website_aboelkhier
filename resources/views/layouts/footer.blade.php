@@ -54,17 +54,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="#">
+                        <a href="{{ $settings[2]->value }}">
                             <i class="fab fa-facebook fa-lg text-white"></i>
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="#">
+                        <a href="{{ $settings[3]->value }}">
                             <i class="fab fa-twitter fa-lg text-white"></i>
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="#">
+                        <a href="{{ $settings[4]->value }}">
                             <i class="fab fa-instagram fa-lg text-white"></i>
                         </a>
                     </div>

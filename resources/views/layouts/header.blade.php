@@ -32,11 +32,11 @@
         <div class="d-flex justify-content-between">
             <div class="mx-3">
                 <i class="fas fa-envelope text-dark"></i>
-                <span class="text-dark">asmaa@gmail.com</span>
+                <span class="text-dark">{!! $settings[0]->value !!}</span>
             </div>
             <div>
                 <i class="fas fa-phone text-dark"></i>
-                <span class="text-dark">+201123635566</span>
+                <span class="text-dark">{!! $settings[1]->value !!}</span>
             </div>
         </div>
       </div>

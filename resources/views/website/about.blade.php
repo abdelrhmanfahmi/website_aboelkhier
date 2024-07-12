@@ -20,14 +20,14 @@
         </div>
         <div class="row mb-5">
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                @if($settings[4]->image != null)
-                    <img src="{{ asset('uploads/' . $settings[4]->image) }}" class="styleImage" alt="">
+                @if($settings[6]->image != null)
+                    <img src="{{ asset('uploads/' . $settings[6]->image) }}" class="styleImage" alt="">
                 @else
                     <img src="{{ asset('assets/images/firstLogo.JPG') }}" class="styleImage" alt="">
                 @endif
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <p class="styleParagraph">{!! $settings[3]->value !!}</p>
+                <p class="styleParagraph">{!! $settings[5]->value !!}</p>
             </div>
         </div>
     </div>
