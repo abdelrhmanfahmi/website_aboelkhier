@@ -37,9 +37,9 @@ class ServiceController extends Controller
     {
         try{
             $data = $request->validated();
-            if($request->has('image') && $request->image){
-                $fileName = $this->fileService->storeFile($data['image']);
-                $data['image'] = $fileName;
+            if($request->has('file') && $request->image){
+                $fileName = $this->fileService->storeFile($data['file']);
+                $data['file'] = $fileName;
             }
 
             if($request->has('icon') && $request->icon){
@@ -79,9 +79,9 @@ class ServiceController extends Controller
         try{
             $data = $request->validated();
             $model = Service::find($id);
-            if($request->has('image') && $request->image){
-                $fileName = $this->fileService->updateFile($data['image'] , $model);
-                $data['image'] = $fileName;
+            if($request->has('file') && $request->image){
+                $fileName = $this->fileService->updateFile($data['file'] , $model);
+                $data['file'] = $fileName;
             }
 
             if($request->has('icon') && $request->icon){
