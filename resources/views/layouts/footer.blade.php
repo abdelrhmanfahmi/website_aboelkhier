@@ -1,21 +1,21 @@
 <footer class="pt-5">
     <div class="container">
+        <?php $settings = \App\Models\Setting::all(); ?>
         <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="">
                     <div class="logo">
                         <a href="/">
-                            <img src="{{ asset('assets/images/firstLogo.JPG') }}" width="60px" height="60px" />
+                            <img src="{{ asset('uploads/' . $settings[7]->image) }}" width="60px" height="60px" />
                         </a>
                     </div>
                 </div>
 
                 <div class="additionl-data mt-11">
-                    <h2>Contact Us</h2>
+                    <h2>تواصل معنا</h2>
                 </div>
                 <p class="text-gray-dark">
-                    Official working hours:
-                    From 10 am to 6 pm
+                    مواعيد وقت العمل الرسمية من 10 صباحا حتي 6 مساءا
                 </p>
 
                 <div>
@@ -24,8 +24,8 @@
                             <img src="{{ asset('assets/images/Group56027.png') }}" width="60px" height="60px" />
                         </div>
                         <div class="info mx-2">
-                            <p class="text-gray gray-only">Got Questions</p>
-                            <p class="text-gray-dark">198465</p>
+                            <p class="text-gray gray-only">لديك اسئلة؟</p>
+                            <p class="text-gray-dark">{{ $settings[1]->value }}</p>
                         </div>
                     </div>
                 </div>
@@ -33,24 +33,24 @@
 
             <div class="col-sm-6 col-md-6 col-lg-5">
                 <div class="titleHolder">
-                    <h2>Fast Links</h2>
+                    <h2>روابط سريعة</h2>
                 </div>
                 <ul>
                     <li>
-                        <a class="text-gray" href="/about">About us</a>
+                        <a class="text-gray" href="/about">عن الموقع</a>
                     </li>
                     <li>
-                        <a class="text-gray" href="/show/service/1">Services</a>
+                        <a class="text-gray" href="/show/service/1">خدماتنا</a>
                     </li>
                     <li>
-                        <a class="text-gray" href="/contact">Contact Us</a>
+                        <a class="text-gray" href="/contact">تواصل معنا</a>
                     </li>
                 </ul>
             </div>
 
             <div class="col-sm-6 colmd-6 col-lg-3">
                 <div class="titleHolder">
-                    <h2>Social Links</h2>
+                    <h2>روابط سوشيال ميديا</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
@@ -72,7 +72,7 @@
             </div>
             <div class="text-center">
                 <hr />
-                <p class="text-gray">© 2024 Copyrights by AboElkheir Agency. All Rights Reserved. Made With <i class="fas fa-heart fa-lg text-white"></i> <a href="/"> <span class="styleFooterText">AboElkheir Agency</span></a></p>
+                <p class="text-gray">© 2024 حقوق النشر لوكالة أبوالخير. كل الحقوق محفوظة. <i class="fas fa-heart fa-lg text-white"></i> <a href="/"> <span class="styleFooterText">ابو الخير للسفريات</span></a></p>
             </div>
         </div>
     </div>

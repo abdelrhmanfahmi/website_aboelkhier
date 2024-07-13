@@ -54,5 +54,11 @@ class SettingSeeder extends Seeder
             'value' => '',
             'image' => '',
         ]);
+
+        Setting::create([
+            'key' => 'logo',
+            'value' => '',
+            'image' => '',
+        ]);
     }
 }

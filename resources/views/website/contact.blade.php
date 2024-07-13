@@ -20,7 +20,7 @@
 
 <div class="row mb-5 pt-5">
     <div class="col-md-12 d-flex justify-content-center">
-        <h3>Contact Us</h3>
+        <h3>تواصل معنا</h3>
     </div>
 </div>
 
@@ -31,33 +31,33 @@
                 <form id="submitContact">
                     <div class="row mb-3">
                         <div class="col-md-6 mb-3">
-                            <label>Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
+                            <label>الاسم</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="ادخل الاسم">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label>Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter E-mail">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="ادخل البريد الإلكتروني">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-6 mb-3">
-                            <label>Phone</label>
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone">
+                            <label>رقم الهاتف</label>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="ادخل رقم الهاتف">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label>Subject</label>
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-12 mb-3">
-                            <label>Message</label>
-                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" style="resize: none"></textarea>
+                            <label>الموضوع</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="ادخل الموضوع">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-12 mb-3">
-                            <button class="btn styleBtnSubmit w-100">Save</button>
+                            <label>الرسالة</label>
+                            <textarea name="message" class="form-control" id="message" cols="30" placeholder="ادخل رسالتك" rows="10" style="resize: none"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12 mb-3">
+                            <button class="btn styleBtnSubmit w-100">حفظ</button>
                         </div>
                     </div>
                 </form>

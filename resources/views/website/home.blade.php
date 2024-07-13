@@ -100,7 +100,7 @@
     <div class="container-fluid">
         <div class="row mb-5">
             <div class="col-md-12">
-                <h3 class="text-center styleBorder">About AboElkheir Travelling Agency</h3>
+                <h3 class="text-center styleBorder">عن وكالة أبوالخير للسفريات</h3>
             </div>
         </div>
         <div class="row mb-5">
@@ -122,16 +122,16 @@
     <div class="container">
         <div class="row mb-5 d-flex justify-content-center">
             <div class="col-md-12">
-                <h3 class="text-center styleBorder">Our Services</h3>
+                <h3 class="text-center styleBorder">خدماتنا</h3>
             </div>
         </div>
 
         <div class="row mb-5 d-flex justify-content-center">
             <div class="col-md-12">
                 <h5 class="text-center" style="line-height: 2">
-                    Aware of the needs of our customers and the fast-paced lifestyles that impose daily orientation towards specific fields, we...
-                    <br>
-                At Trust Certified Translation Company, we provide our se
+                    وإدراكًا منّا لحاجة عملاءنا وأنماط الحياة السريعة التي تفرض يوميًا التوجه نحو مجالات بعينها، فنحن
+
+                    في شركة أبو الخير للترجمة المعتمدة نوفر خدماتنا في كافة المجالات
                 </h5>
             </div>
         </div>
@@ -165,12 +165,12 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-12 d-flex justify-content-center">
-                <h3 class="text-center styleBorder">Why Choose AboElkheir Travelling Agency ?</h3>
+                <h3 class="text-center styleBorder">لماذا تختار وكالة أبوالخير للسفريات ؟</h3>
             </div>
         </div>
         <div class="row mb-5">
             @foreach ($why as $w)
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="card myCardTwo">
                         <div class="text-center">
                             @if($w->image != null)
@@ -190,6 +190,12 @@
     </div>
 </section>
 
+<div class="row mb-5">
+    <div class="col-md-12 d-flex justify-content-center">
+        <h3 class="text-center styleBorder">تواصل معنا</h3>
+    </div>
+</div>
+
 <section class="contact-us mb-5 pt-5" style="background-color: #4071a1">
     <div class="container">
         <div class="row mb-3">
@@ -197,33 +203,33 @@
                 <form id="submitContact">
                     <div class="row mb-3">
                         <div class="col-md-6 mb-3">
-                            <label>Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
+                            <label>الاسم</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="ادخل الاسم">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label>Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter E-mail">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="ادخل البريد الإلكتروني">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-6 mb-3">
-                            <label>Phone</label>
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone">
+                            <label>رقم الهاتف</label>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="ادخل رقم الهاتف">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label>Subject</label>
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-12 mb-3">
-                            <label>Message</label>
-                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" style="resize: none"></textarea>
+                            <label>الموضوع</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="ادخل الموضوع">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-12 mb-3">
-                            <button class="btn styleBtnSubmit w-100">Save</button>
+                            <label>الرسالة</label>
+                            <textarea name="message" class="form-control" id="message" placeholder="ادخل رسالتك" cols="30" rows="10" style="resize: none"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12 mb-3">
+                            <button class="btn styleBtnSubmit w-100">حفظ</button>
                         </div>
                     </div>
                 </form>

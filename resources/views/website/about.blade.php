@@ -15,7 +15,7 @@
     <div class="container-fluid">
         <div class="row mb-5">
             <div class="col-md-12">
-                <h3 class="text-center styleBorder">About AboElkheir Travelling Agency</h3>
+                <h3 class="text-center styleBorder">عن وكالة أبوالخير للسفريات</h3>
             </div>
         </div>
         <div class="row mb-5">

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="{{asset('assets/images/firstLogo.JPG')}}"  />
     {{-- <meta http-equiv="Refresh" content="300"> --}}
-    <title>british</title>
+    <title>Admin AboElkhier</title>
     <style>
         body{
             height: 100vh;
