@@ -17,21 +17,21 @@ class ServiceSeeder extends Seeder
             'title' => 'Service One',
             'description' => 'Description',
             'icon' => '',
-            'image' => '',
+            'file' => '',
         ]);
 
         Service::create([
             'title' => 'Service Two',
             'description' => 'Description',
             'icon' => '',
-            'image' => '',
+            'file' => '',
         ]);
 
         Service::create([
             'title' => 'Service Two',
             'description' => 'Description',
             'icon' => '',
-            'image' => '',
+            'file' => '',
         ]);
     }
 }

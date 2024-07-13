@@ -42,8 +42,14 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-12 d-flex justify-content-center">
-                @if($service->image != null)
-                    <img src="{{ asset('uploads/' . $service->image) }}" class="styleImage" alt="">
+                <?php $ext = pathinfo($service->file, PATHINFO_EXTENSION); ?>
+                @if($service->file != null && ($ext == 'svg' || $ext == 'png' || $ext == 'jpeg' || $ext == 'jpg'))
+                    <img src="{{ asset('uploads/' . $service->file) }}" class="styleImage" alt="">
+                @elseif ($service->file != null && ($ext == 'mp4' || $ext == 'mov'))
+                    <video width="1000" controls style="max-width: 100%;">
+                        <source src="{{ asset('uploads/' . $service->file) }}" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
                 @else
                     <img src="https://www.trusttranslations.net/uploads/service_items/7d72ca7133a5452bcf4450fb3029ab6d1.webp" alt="">
                 @endif

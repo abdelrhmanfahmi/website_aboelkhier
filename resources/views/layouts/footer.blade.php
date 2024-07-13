@@ -6,7 +6,11 @@
                 <div class="">
                     <div class="logo">
                         <a href="/">
-                            <img src="{{ asset('uploads/' . $settings[7]->image) }}" width="60px" height="60px" />
+                            @if($settings[7]->image != null)
+                                <img src="{{ asset('uploads/' . $settings[7]->image) }}" width="60px" height="60px" alt="">
+                            @else
+                                <img src="{{ asset('assets/images/firstLogo.JPG') }}" width="60px" height="60px" alt="">
+                            @endif
                         </a>
                     </div>
                 </div>

@@ -25,7 +25,7 @@ class UpdateServiceRequest extends FormRequest
             'title' => 'min:1|string',
             'description' => 'min:1',
             'icon' => 'nullable|image|mimes:png,jpg,svg,jpeg',
-            'image' => 'nullable|image|mimes:png,jpg,svg,jpeg'
+            'file' => 'nullable|mimes:png,jpg,svg,jpeg,mp4,mov|max:1024'
         ];
     }
 }

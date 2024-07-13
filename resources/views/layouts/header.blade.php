@@ -2,7 +2,11 @@
     <div class="container-fluid">
       <?php $settings = \App\Models\Setting::all(); ?>
       <a class="navbar-brand" href="#">
-        <img src="{{ asset('uploads/' . $settings[7]->image) }}" width="80px" height="80px" alt="">
+        @if($settings[7]->image != null)
+            <img src="{{ asset('uploads/' . $settings[7]->image) }}" width="80px" height="80px" alt="">
+        @else
+            <img src="{{ asset('assets/images/firstLogo.JPG') }}" width="80px" height="80px" alt="">
+        @endif
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>

@@ -21,7 +21,8 @@
                         <td>{{ $setting->key }}</td>
                         <td>{{ \Illuminate\Support\Str::limit($setting->value, 90, $end='...') }}</td>
                         <td>
-                            @if ($setting->image != null)
+                            <?php $ext = pathinfo($setting->image, PATHINFO_EXTENSION); ?>
+                            @if ($setting->image != null && ($ext == 'svg' || $ext == 'png' || $ext == 'jpeg' || $ext == 'jpg'))
                                 <img src="{{ asset('/uploads/' . $setting->image) }}" width="30px" height="30px" alt="">
                             @else
 
