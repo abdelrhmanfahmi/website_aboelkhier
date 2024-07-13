@@ -15,13 +15,13 @@ class SettingSeeder extends Seeder
     {
         Setting::create([
             'key' => 'email_site',
-            'value' => '',
+            'value' => 'asmaa@gmail.com',
             'image' => '',
         ]);
 
         Setting::create([
             'key' => 'phone_site',
-            'value' => '',
+            'value' => '+201123635566',
             'image' => '',
         ]);
 
