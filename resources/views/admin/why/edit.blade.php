@@ -48,10 +48,10 @@
 <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
-    ClassicEditor.create(document.querySelector('#description'))
-    .catch(error => {
-        console.error(error);
-    });
+    // ClassicEditor.create(document.querySelector('#description'))
+    // .catch(error => {
+    //     console.error(error);
+    // });
 
     $(document).ready(function(e){
         if ($(".errorName")){

@@ -66,7 +66,6 @@
                                     <img src="https://www.trusttranslations.net/images/resources/banner.webp" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>{{ $service->title }}</h5>
-                                        <p>{!! \Str::limit($service->description, 50) !!}</p>
                                     </div>
                                 </div>
                             </a>
@@ -76,7 +75,6 @@
                                     <img src="https://www.trusttranslations.net/images/resources/banner.webp" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>{{ $service->title }}</h5>
-                                        <p>{!! \Str::limit($service->description, 50) !!}</p>
                                     </div>
                                 </div>
                             </a>
@@ -157,7 +155,7 @@
                             <div class="card-body text-center">
 
                             <h5 class="card-title">{{ $service->title }}</h5>
-                            <p class="card-text">{!! \Str::limit($service->description, 30) !!}</p>
+                            {{-- <div class="card-text">{!! \Str::limit($service->description, 30) !!}</div> --}}
                             </div>
                         </div>
                     </a>
@@ -187,7 +185,7 @@
                         </div>
                         <div class="card-body text-center">
                         <h5 class="card-title text-white">{{ $w->title }}</h5>
-                        <p class="card-text">{!! $w->description !!}</p>
+                        <p class="card-text">{{ $w->description }}</p>
                         </div>
                     </div>
                 </div>
