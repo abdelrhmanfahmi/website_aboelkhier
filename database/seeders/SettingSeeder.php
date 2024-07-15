@@ -78,5 +78,11 @@ class SettingSeeder extends Seeder
             'value' => 'لماذا تختار شركة ابو الخير',
             'image' => '',
         ]);
+
+        Setting::create([
+            'key' => 'working_hours',
+            'value' => 'مواعيد العمل يوميا من 10 ص إلى 10 م ماعدا الجمعه والعطلات الرسمية',
+            'image' => '',
+        ]);
     }
 }
