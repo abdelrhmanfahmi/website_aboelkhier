@@ -98,7 +98,7 @@
     <div class="container-fluid">
         <div class="row mb-5">
             <div class="col-md-12">
-                <h3 class="text-center styleBorder">عن وكالة أبوالخير للسفريات</h3>
+                <h3 class="text-center styleBorder">{{ $settings[8]->value }}</h3>
             </div>
         </div>
         <div class="row mb-5">
@@ -126,7 +126,7 @@
     <div class="container">
         <div class="row mb-5 d-flex justify-content-center">
             <div class="col-md-12">
-                <h3 class="text-center styleBorder">خدماتنا</h3>
+                <h3 class="text-center styleBorder">{{ $settings[9]->value }}</h3>
             </div>
         </div>
 
@@ -169,7 +169,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-12 d-flex justify-content-center">
-                <h3 class="text-center styleBorder">لماذا تختار وكالة أبوالخير للسفريات ؟</h3>
+                <h3 class="text-center styleBorder">{{ $settings[10]->value }}</h3>
             </div>
         </div>
         <div class="row mb-5">

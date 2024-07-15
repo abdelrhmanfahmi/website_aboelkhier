@@ -60,5 +60,23 @@ class SettingSeeder extends Seeder
             'value' => '',
             'image' => '',
         ]);
+
+        Setting::create([
+            'key' => 'about_us_main_title',
+            'value' => 'عن شركة أبو الخير',
+            'image' => '',
+        ]);
+
+        Setting::create([
+            'key' => 'our_services_title',
+            'value' => 'خدماتنا',
+            'image' => '',
+        ]);
+
+        Setting::create([
+            'key' => 'why_title',
+            'value' => 'لماذا تختار شركة ابو الخير',
+            'image' => '',
+        ]);
     }
 }
