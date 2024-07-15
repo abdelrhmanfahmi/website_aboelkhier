@@ -144,9 +144,9 @@
             @foreach ($services as $service)
                 <div class="col-md-4 mb-3">
                     <a href="/show/service/{{ $service->id }}" style="text-decoration: none;">
-                        <div class="card myCard">
+                        <div class="card myCard" style="padding:0.5rem;">
                             <div class="text-center">
-                                @if($service->image != null)
+                                @if($service->icon != null)
                                     <img src="{{ asset('uploads/' . $service->icon) }}" width="80" height="80" alt="">
                                 @else
                                     <img src="{{ asset('assets/images/firstLogo.JPG') }}" width="80" height="80" alt="">
@@ -155,7 +155,7 @@
                             <div class="card-body text-center">
 
                             <h5 class="card-title">{{ $service->title }}</h5>
-                            {{-- <div class="card-text">{!! \Str::limit($service->description, 30) !!}</div> --}}
+                            <!--<div>{!! \Str::limit($service->description, 30) !!}</div>-->
                             </div>
                         </div>
                     </a>
