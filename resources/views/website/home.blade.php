@@ -31,7 +31,12 @@
         text-decoration-color: #89cff0;
     }
     .styleParagraph{
-        line-height: 2;
+        line-height: 2.5;
+        direction: rtl;
+    }
+    .styleParagraph < p{
+        line-height: 2.5;
+        direction: rtl;
     }
     .styleImageTwo{
         width: 100%;
@@ -116,7 +121,7 @@
                 @endif
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <p class="styleParagraph">{!! $settings[5]->value !!}</p>
+                <div class="styleParagraph">{!! $settings[5]->value !!}</div>
             </div>
         </div>
     </div>
@@ -185,7 +190,7 @@
                         </div>
                         <div class="card-body text-center">
                         <h5 class="card-title text-white">{{ $w->title }}</h5>
-                        <p class="card-text">{{ $w->description }}</p>
+                        <p class="card-text" style="direction: rtl;">{{ $w->description }}</p>
                         </div>
                     </div>
                 </div>

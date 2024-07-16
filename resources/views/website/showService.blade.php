@@ -20,6 +20,7 @@
     }
     .styleParagraphService{
         line-height: 2;
+        direction: rtl;
     }
     .styleImage{
         width: 50%;
@@ -58,7 +59,7 @@
 
         <div class="row mb-5 d-flex justify-content-center">
             <div class="col-md-12">
-                <h3 class="text-danger">{{ $service->title }}</h3>
+                <h3 class="text-danger" style="direction: rtl;">{{ $service->title }}</h3>
                 <p class="styleParagraphService">{!! $service->description !!}</p>
             </div>
         </div>

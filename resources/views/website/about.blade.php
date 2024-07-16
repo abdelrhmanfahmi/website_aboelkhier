@@ -7,7 +7,17 @@
         height: 100%;
     }
     .styleParagraph{
-        line-height: 2;
+        line-height: 2.5;
+        direction: rtl;
+    }
+
+    .styleParagraph > p{
+        line-height: 2.5;
+        direction: rtl;
+    }
+    .styleBorder{
+        text-decoration: underline;
+        text-decoration-color: #89cff0;
     }
 </style>
 
@@ -15,7 +25,7 @@
     <div class="container-fluid">
         <div class="row mb-5">
             <div class="col-md-12">
-                <h3 class="text-center styleBorder">عن وكالة أبوالخير للسفريات</h3>
+                <h3 class="text-center styleBorder">{{ $settings[8]->value }}</h3>
             </div>
         </div>
         <div class="row mb-5">
@@ -33,7 +43,7 @@
                 @endif
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <p class="styleParagraph">{!! $settings[5]->value !!}</p>
+                <div class="styleParagraph">{!! $settings[5]->value !!}</div>
             </div>
         </div>
     </div>
