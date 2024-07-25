@@ -38,9 +38,6 @@
             @endif
         </tbody>
     </table>
-    <div class="d-flex">
-        {!! $settings->links() !!}
-    </div>
 </div>
 
 @endsection

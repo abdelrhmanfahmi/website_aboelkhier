@@ -57,23 +57,41 @@
                     <h2>روابط سوشيال ميديا</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <a href="{{ $settings[2]->value }}">
                             <i class="fab fa-facebook fa-lg text-white"></i>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="{{ $settings[3]->value }}">
-                            <i class="fab fa-twitter fa-lg text-white"></i>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <a href="{{ $settings[4]->value }}">
                             <i class="fab fa-instagram fa-lg text-white"></i>
                         </a>
                     </div>
+                    <div class="col-md-2">
+                        <a href="{{ $settings[12]->value }}">
+                            <i class="fab fa-tiktok fa-lg text-white"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="{{ $settings[13]->value }}">
+                            <i class="fab fa-youtube fa-lg text-white"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="{{ $settings[14]->value }}">
+                            <i class="fas fa-threads fa-lg text-white">@</i>
+                        </a>
+                    </div>
+
                 </div>
             </div>
+
+            <hr />
+
+            <div class="col-sm-12 col-md-12 d-flex justify-content-center w-100">
+                {!! $settings[16]->value !!}
+            </div>
+
             <div class="text-center">
                 <hr />
                 <p class="text-gray">© 2024 حقوق النشر لوكالة أبوالخير. كل الحقوق محفوظة. <i class="fas fa-heart fa-lg text-white"></i> <a href="/"> <span class="styleFooterText">ابو الخير للسفريات</span></a></p>

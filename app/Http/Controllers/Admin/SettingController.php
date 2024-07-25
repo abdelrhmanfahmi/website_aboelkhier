@@ -18,7 +18,7 @@ class SettingController extends Controller
     public function index()
     {
         $count = Request()->count ?? 10;
-        $paginate = Request()->paginate ?? true;
+        $paginate = false;
 
         $settings = $this->settingRepository->all($count , $paginate);
         return view('admin.settings.index' ,compact('settings'));

@@ -84,5 +84,35 @@ class SettingSeeder extends Seeder
             'value' => 'مواعيد العمل يوميا من 10 ص إلى 10 م ماعدا الجمعه والعطلات الرسمية',
             'image' => '',
         ]);
+
+        Setting::create([
+            'key' => 'tiktok_link',
+            'value' => '',
+            'image' => '',
+        ]);
+
+        Setting::create([
+            'key' => 'youtube_link',
+            'value' => '',
+            'image' => '',
+        ]);
+
+        Setting::create([
+            'key' => 'threads_link',
+            'value' => '',
+            'image' => '',
+        ]);
+
+        Setting::create([
+            'key' => 'website_address',
+            'value' => '',
+            'image' => '',
+        ]);
+
+        Setting::create([
+            'key' => 'website_address_google_maps',
+            'value' => '',
+            'image' => '',
+        ]);
     }
 }
