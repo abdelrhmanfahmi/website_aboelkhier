@@ -19,7 +19,7 @@
                     <tr>
                         <th scope="row">{{ $index+1 }}</th>
                         <td>{{ $setting->key }}</td>
-                        <td>{{ \Illuminate\Support\Str::limit($setting->value, 90, $end='...') }}</td>
+                        <td>{{ \Illuminate\Support\Str::limit($setting->value, 30, $end='...') }}</td>
                         <td>
                             <?php $ext = pathinfo($setting->image, PATHINFO_EXTENSION); ?>
                             @if ($setting->image != null && ($ext == 'svg' || $ext == 'png' || $ext == 'jpeg' || $ext == 'jpg'))
