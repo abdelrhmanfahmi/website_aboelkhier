@@ -2,6 +2,9 @@
 
 namespace App\Services;
 
+use App\Jobs\SendFileService;
+use App\Models\FileRecievedReset;
+
 class FileService {
 
     public function storeFile($file)
@@ -12,6 +15,16 @@ class FileService {
             return $fileName;
         }catch(\Exception $e){
             return $e;
+        }
+    }
+
+    public function storeFilesService($files , $recieveReset)
+    {
+        foreach($files as $file){
+            $fileName = time().rand(1,99).'.'.$file->extension();
+            $file->move(public_path('uploads'), $fileName);
+
+            dispatch(new SendFileService($fileName , $recieveReset));
         }
     }
 
@@ -32,6 +45,19 @@ class FileService {
             }
         }catch(\Exception $e){
             return $e;
+        }
+    }
+
+    public function deleteRecieveResetData($reset_id)
+    {
+        $files = FileRecievedReset::where('reset_id' , $reset_id)->get();
+        try{
+            foreach($files as $file){
+                unlink("uploads/".$file->file);
+                FileRecievedReset::where('reset_id' , $reset_id)->delete();
+            }
+        }catch(\Exception $e){
+            //do nothing
         }
     }
 

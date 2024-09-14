@@ -29,7 +29,7 @@
                             @endif
                         </td>
                         <td>
-                            <a href="/admin/settings/{{$setting->id}}/edit" class="btn btn-success">Edit</a>
+                            <a href="settings/{{$setting->id}}/edit" class="btn btn-success">Edit</a>
                         </td>
                     </tr>
                 @endforeach

@@ -28,10 +28,10 @@
                             @endif
                         </td>
                         <td>
-                            <a href="/admin/why/{{$w->id}}/edit" class="btn btn-success">Edit</a>
+                            <a href="why/{{$w->id}}/edit" class="btn btn-success">Edit</a>
                         </td>
                         <td>
-                            <a href="/admin/why/delete/{{$w->id}}" class="btn btn-danger">Delete</a>
+                            <a href="why/delete/{{$w->id}}" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                 @endforeach

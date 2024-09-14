@@ -24,7 +24,7 @@
                         <td>{{ $contact->phone}}</td>
                         <td>{{ $contact->subject}}</td>
                         <td>
-                            <a href="/admin/contacts/{{$contact->id}}/show" class="btn btn-primary">Show</a>
+                            <a href="contacts/{{$contact->id}}/show" class="btn btn-primary">Show</a>
                         </td>
                     </tr>
                 @endforeach
