@@ -2,12 +2,15 @@
 
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\LanguageController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\TranslatorController;
 use App\Http\Controllers\Admin\WhyController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\User\ContactUserController;
 use App\Http\Controllers\User\WebsiteController;
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/' , [WebsiteController::class , 'index']);
@@ -16,6 +19,10 @@ Route::get('/contact' , [WebsiteController::class , 'contactUsPage']);
 Route::get('/show/service/{id}' , [WebsiteController::class , 'servicesPage']);
 Route::post('/store/contact' , [ContactUserController::class , 'storeContact'])->name('store.contactUser');
 
+
+Route::get('admin' , function(){
+    return redirect()->route('login');
+});
 Route::get('/admin/login', [AuthController::class , 'showLoginPage'])->name('login');
 Route::post('/login', [AuthController::class , 'login'])->name('login.submit');
 
@@ -35,6 +42,12 @@ Route::group(['middleware' => ['auth']], function () {
 
         Route::get('/contacts' , [ContactController::class , 'index'])->name('contact.index');
         Route::get('/contacts/{id}/show' , [ContactController::class , 'show'])->name('contact.show');
+
+
+        //admin dashboard
+        Route::resource('users' , UserController::class);
+        Route::resource('languages' , LanguageController::class);
+        Route::resource('translators' , TranslatorController::class);
     });
 
     Route::get('/logout' , [AuthController::class , 'logout'])->name('logout');

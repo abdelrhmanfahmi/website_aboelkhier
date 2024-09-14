@@ -54,6 +54,46 @@
                 </ul>
             </li>
 
+            <hr class="text-white">
+
+            <li>
+                <a href="#submenu8" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">المستخدمين</span> </a>
+                <ul class="collapse nav flex-column ms-1" id="submenu8" data-bs-parent="#menu">
+                    <li class="w-100">
+                        <a href="/admin/users" class="nav-link text-white px-0"> <span class="d-none d-sm-inline">المستخدمين</span></a>
+                    </li>
+                    <li>
+                        <a href="/admin/users/create" class="nav-link text-white px-0"> <span class="d-none d-sm-inline">إضافة مستخدم</span></a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#submenu9" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">اللغات</span></a>
+                <ul class="collapse nav flex-column ms-1" id="submenu9" data-bs-parent="#menu">
+                    <li class="w-100">
+                        <a href="/admin/languages" class="nav-link text-white px-0"> <span class="d-none d-sm-inline">اللغات</span></a>
+                    </li>
+                    <li>
+                        <a href="/admin/languages/create" class="nav-link text-white px-0"> <span class="d-none d-sm-inline">إضافة لغة</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#submenu10" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">المترجمين</span> </a>
+                    <ul class="collapse nav flex-column ms-1" id="submenu10" data-bs-parent="#menu">
+                    <li class="w-100">
+                        <a href="/admin/translators" class="nav-link text-white px-0"> <span class="d-none d-sm-inline">المترجمين</span></a>
+                    </li>
+                    <li>
+                        <a href="/admin/translators/create" class="nav-link text-white px-0"> <span class="d-none d-sm-inline">إضافة مترجم</span></a>
+                    </li>
+                </ul>
+            </li>
+
             <li>
                 <a href="#submenu7" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                     <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">logout</span> </a>
